@@ -1,0 +1,9 @@
+{ T: 'Shell',
+  val: 
+   { T: 'Spell',
+     id: 'set',
+     args: 
+      [ { T: 'Word', val: 'yourmother' },
+        { T: 'Spell',
+          id: 'add',
+          args: [ { T: 'Num', val: 5 }, { T: 'Num', val: 10 } ] } ] } }

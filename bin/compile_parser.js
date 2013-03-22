@@ -2,10 +2,13 @@ var fs = require('fs');
 var peg = require('pegjs');
 var ugl = require('uglify-js');
 
+
 var min = false;
+var filename = 'phi';
+
 
 console.log('loading grammar...');
-var grammar = fs.readFileSync('phi.peg', 'utf-8');
+var grammar = fs.readFileSync('peg/'+filename+'.peg', 'utf-8');
 
 console.log('building parser...');
 var parser = peg.buildParser(grammar);
@@ -22,6 +25,6 @@ if(min) {
 }
 
 console.log('saving parser...');
-fs.writeFileSync('phi_parse.js', source, 'utf-8');
+fs.writeFileSync('peg/parser/'+filename+'.js', source, 'utf-8');
 
 console.log('done.');
