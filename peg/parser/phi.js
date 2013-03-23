@@ -128,9 +128,9 @@ module.exports = (function(){
         var pos0;
         
         pos0 = pos;
-        result0 = parse_Scope();
+        result0 = parse_ListItems();
         if (result0 !== null) {
-          result0 = (function(offset, a) { return { T: 'Shell', val: a }; })(pos0, result0);
+          result0 = (function(offset, items) { return { T: 'Shell', body: items }; })(pos0, result0);
         }
         if (result0 === null) {
           pos = pos0;

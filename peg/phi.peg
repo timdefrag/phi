@@ -1,6 +1,6 @@
 
 start
-  = a:Scope { return { T: 'Shell', val: a }; }
+  = items:ListItems { return { T: 'Shell', body: items }; }
 
 
 //
