@@ -1,6 +1,6 @@
 {
   "name": "phi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Defrag <tim.defrag@gmail.com>",
   "dependencies" : {
     "uglify-js": "*"
